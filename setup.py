@@ -22,11 +22,12 @@
 # SOFTWARE.
 
 
-from distutils.core import setup
+from setuptools import setup
 import os.path
 import os
 from subprocess import check_output
 
+HERE=os.path.abspath(os.path.dirname(__file__))
 
 def readfile(filename):
 	f = open(filename)
@@ -45,7 +46,7 @@ def getcommit():
 
 
 setup(
-	name=u'Distutils',
+	name=u'MobileDevice',
 	version=u'1.0' + getcommit(),
 	description=u'A python package, and command line tool, which wraps Apple\'s MobileDevice API - providing access to iOS devices',
 	long_description = readfile(u'README.md'),
@@ -67,6 +68,7 @@ setup(
 	],
 	license= readfile(u'LICENSE'),
 	packages=['MobileDevice'],
-	package_dir={'': u'../'},
+	package_dir={'MobileDevice': HERE},
+	zip_safe=False,
 	scripts=[u'mdf']
 )
