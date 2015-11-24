@@ -22,7 +22,7 @@
 # SOFTWARE.
 
 
-from MobileDevice import *
+from MobileDeviceCore import *
 from amdevice import *
 from ctypes import *
 from posixpath import *

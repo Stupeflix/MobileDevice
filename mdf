@@ -22,7 +22,7 @@
 # SOFTWARE.
 
 
-from MobileDevice import *
+from MobileDeviceCore import *
 
 if __name__ == u'__main__':
 	argparse_parse(globals())

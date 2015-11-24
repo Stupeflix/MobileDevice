@@ -22,7 +22,7 @@
 # SOFTWARE.
 
 
-from MobileDevice import *
+from MobileDeviceCore import *
 from amdevice import *
 from plistservice import *
 import os

@@ -22,7 +22,7 @@
 # SOFTWARE.
 
 
-from MobileDevice import *
+from MobileDeviceCore import *
 import socket
 import select
 import os
@@ -31,7 +31,7 @@ import glob
 
 class AMDevice(object):
 	u'''Represents a Apple Mobile Device; providing a wrapping around the raw
-	MobileDeviceAPI.
+	MobileDeviceCoreAPI.
 	'''
 
 	# XXX add recovery mode features - move them into anoher file
@@ -56,7 +56,7 @@ class AMDevice(object):
 		u'''Initializes a AMDevice object
 
 		Arguments:
-		dev -- the device returned by MobileDeviceAPI
+		dev -- the device returned by MobileDeviceCoreAPI
 		'''
 		self.dev = dev
 
