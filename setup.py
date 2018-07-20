@@ -42,7 +42,7 @@ def getcommit():
 		retval = u'.' + retval.strip()
 	except:
 		pass
-	return retval
+	return str(retval)
 
 
 setup(
