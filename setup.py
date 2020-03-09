@@ -38,7 +38,7 @@ def readfile(filename):
 def getcommit():
 	retval = u''
 	try:
-		retval = check_output([u'git', u'rev-list', u'--all', u'--count'])
+		retval = check_output([u'git', u'rev-list', u'--all', u'--count'], text=True)
 		retval = u'.' + retval.strip()
 	except:
 		pass
